@@ -38,7 +38,7 @@
                             <p>Prix : {{ $product->price_ttc }}€</p>
                         @endif
                     </div>
-                    
+
                     <div class="col-6">
                         @if($edit)
                             <label>Stock :</label>
