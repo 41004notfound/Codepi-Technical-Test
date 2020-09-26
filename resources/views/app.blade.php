@@ -6,15 +6,15 @@
             <h1>{{ env('APP_NAME') ?? 'Codepi Technical Test' }}</h1>
             <hr>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
             <!-- Categories Listing - Livewire Component -->
             <livewire:listing-categories />
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
             <!-- Products Listing - Livewire Component -->
             <livewire:listing-products />
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3">
             <!-- Characteristics Listing - Livewire Component -->
             <livewire:listing-characteristics />
         </div>

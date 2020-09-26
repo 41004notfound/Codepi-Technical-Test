@@ -1,4 +1,4 @@
-<div class="card mb-3">
+<div class="card mb-2">
     @if($edit)
         <form wire:submit.prevent="save">
     @endif
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <p class="font-weight-bold mb-0">Catégories</p>
                 @if($edit)
                     <select wire:model="selected_categories" class="form-control" multiple>
@@ -67,7 +67,7 @@
                     @endforeach
                 @endif
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <p class="font-weight-bold mb-0">Caractéristiques</p>
                 @if($edit)
                     <select wire:model="selected_characteristics" class="form-control" multiple>
