@@ -24,6 +24,8 @@ class CharacteristicAdd extends Component
             'name' => $this->name,
         ]);
 
+        // Refresh products
+        $this->emitTo('product', 'update');
         // Notify the parent to refresh the category listing
         $this->emitUp('insert');
     }

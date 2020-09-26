@@ -28,6 +28,8 @@ class Characteristic extends Component
         $this->validate();
         $this->characteristic->save();
 
+        // Refresh products
+        $this->emitTo('product', 'update');
         // Refresh component
         $this->mount();
     }

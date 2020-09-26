@@ -29,6 +29,8 @@ class Product extends Component
         'selected_characteristics' => 'required|min:3',
     ];
 
+    protected $listeners = ['update' => 'mount'];
+
     public function mount() {
         $this->product = ProductModel::find($this->productID);
         $this->categories = Category::all();

@@ -45,8 +45,11 @@ class Category extends Component
 
         $this->category->save();
 
-        // Refresh component
+        // Refresh products
+        $this->emitTo('product', 'update');
+        // Refresh parent component
         $this->emitUp('update');
+        // Refresh component
         $this->mount();
     }
 }
