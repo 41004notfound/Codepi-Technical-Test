@@ -20,25 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939d0850-2302-4edc-b464-4ae66d153572" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Characteristic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingCategories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingCharacteristics.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingProducts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ProductAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/category.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/characteristic.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/listing-categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/listing-characteristics.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/listing-products.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/product-add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Codepi-Technical-Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Codepi-Technical-Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AppController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Characteristic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ListingCharacteristics.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingCharacteristics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ListingProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ProductAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ProductAdd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601058104731</updated>
-      <workItem from="1601058105855" duration="2340000" />
+      <workItem from="1601058105855" duration="5035000" />
     </task>
     <servers />
   </component>
@@ -216,6 +207,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601103468698">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1010" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040/2560.-853.1080.1880@0.0.2560.1040" timestamp="1601103468698" />
     <state x="781" y="165" key="SettingsEditor" timestamp="1601058149024">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
