@@ -21,8 +21,8 @@ class ProductAdd extends Component
     public $characteristics;
 
     // Array of selected categories & characteristics to link
-    public $selectedCategories;
-    public $selectedCharacteristics;
+    public $selected_categories;
+    public $selected_characteristics;
 
     // True to show the adding input, false to hide it
     public $addingCategory;
@@ -38,6 +38,8 @@ class ProductAdd extends Component
         'description' => 'max:255',
         'price_ttc' => 'required|int|min:0',
         'stock' => 'required|int|min:0',
+        'selected_categories' => 'required|min:3',
+        'selected_characteristics' => 'required|min:3',
     ];
 
     public function mount() {
@@ -50,8 +52,8 @@ class ProductAdd extends Component
         return view('livewire.product-add', [
             'categories' => $this->categories,
             'characteristics' => $this->characteristics,
-            'selectedCategories' => $this->selectedCategories,
-            'selectedCharacteristics' => $this->selectedCharacteristics,
+            'selected_categories' => $this->selected_categories,
+            'selected_characteristics' => $this->selected_characteristics,
             'new_category' => $this->new_category,
             'new_characteristic' => $this->new_characteristic
         ]);
@@ -60,22 +62,22 @@ class ProductAdd extends Component
     /**
      * Submit the add product form
      */
-    public function submit()
-    {
+    public function submit() {
         $this->validate();
-
         $product = Product::create([
             'name' => $this->name,
-            'description' => $this->description,
+            'description' => ($this->description ?? ''),
             'price_ttc' => $this->price_ttc,
             'price_htva' => $this->price_ttc * 0.80,
             'stock' => $this->stock,
         ]);
-        $product->addCategories($this->selectedCategories);
-        $product->addCaracteristics($this->selectedCharacteristics);
+        $product->addCategories($this->selected_categories);
+        $product->addCharacteristics($this->selected_characteristics);
 
         if($this->new_category)
-            $product->addCategory($this->new_category);
+            $product->addToNewCategory($this->new_category);
+        if($this->new_characteristic)
+            $product->addToNewCharacteristic($this->new_characteristic);
 
         // Notify the parent to refresh the product listing
         $this->emitUp('insert');
@@ -85,13 +87,13 @@ class ProductAdd extends Component
      * Show the create & add new category input
      */
     public function newCategory() {
-        $this->addingCategory = true;
+        $this->addingCategory = !$this->addingCategory;
     }
 
     /**
      * Show the create & add new characteristic input
      */
     public function newCharacteristic() {
-        $this->addingCharacteristic = true;
+        $this->addingCharacteristic = !$this->addingCharacteristic;
     }
 }

@@ -35,4 +35,18 @@ class Category extends Model
     public function isParent() {
         return ($this->id == $this->parent);
     }
+
+    /**
+     * Scope parents categories
+     */
+    public function scopeParents($query) {
+        return $query->whereRaw('id = parent');
+    }
+
+    /**
+     * Scope childrens categories
+     */
+    public function scopeChildrens($query) {
+        return $query->whereRaw('id != parent');
+    }
 }

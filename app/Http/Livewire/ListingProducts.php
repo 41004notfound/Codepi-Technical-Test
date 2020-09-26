@@ -8,9 +8,11 @@ use Livewire\Component;
 class ListingProducts extends Component
 {
     public $products;
+
     // True to show the adding form, false to hide it
     public $adding;
-    protected $listeners = ['delete' => 'mount', 'insert' => 'mount'];
+
+    protected $listeners = ['delete' => 'mount', 'update' => 'mount', 'insert' => 'mount'];
 
     public function mount() {
         $this->products = Product::orderBy('id', 'DESC')->get();

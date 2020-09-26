@@ -9,14 +9,16 @@ class ListingCharacteristics extends Component
 {
     public $characteristics;
 
-    public function mount() {
-        $this->caracteristics = Characteristic::orderBy('name')->get();
-    }
+    // True to show the adding form, false to hide it
+    public $adding;
+    // True to show the editing form, false to hide it
+    public $edit;
 
-    public function render()
-    {
-        return view('livewire.listing-characteristics', [
-            'characteristics' => $this->characteristics
-        ]);
+    protected $listeners = ['insert' => 'mount'];
+
+    public function mount() {
+        $this->characteristics = Characteristic::orderBy('name')->get();
+        $this->adding = false;
+        $this->edit = false;
     }
 }

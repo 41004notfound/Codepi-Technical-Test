@@ -11,11 +11,11 @@
             <livewire:listing-categories />
         </div>
         <div class="col-6">
-            <!-- Categories Listing - Livewire Component -->
+            <!-- Products Listing - Livewire Component -->
             <livewire:listing-products />
         </div>
         <div class="col-3">
-            <!-- Categories Listing - Livewire Component -->
+            <!-- Characteristics Listing - Livewire Component -->
             <livewire:listing-characteristics />
         </div>
     </div>
