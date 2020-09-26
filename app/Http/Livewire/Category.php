@@ -27,6 +27,9 @@ class Category extends Component
         $this->parent_categories = CategoryModel::parents()->get();
         $this->edit = false;
         $this->is_parent = $this->category->isParent();
+
+        // Default parent
+        $this->selected_parent_category = 1;
     }
 
     /**

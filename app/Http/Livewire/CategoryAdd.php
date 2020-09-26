@@ -14,6 +14,7 @@ class CategoryAdd extends Component
     // Parent categories select list
     public $parent_categories;
 
+    // Parent category values
     public $is_parent;
     public $selected_parent_category;
 
@@ -26,14 +27,6 @@ class CategoryAdd extends Component
     public function mount() {
         $this->parent_categories = Category::parents()->get();
         $this->is_parent = true;
-    }
-
-    public function render()
-    {
-        return view('livewire.category-add', [
-            'parent_categories' => $this->parent_categories,
-            'selected_parent_category' => $this->selected_parent_category,
-        ]);
     }
 
     /**

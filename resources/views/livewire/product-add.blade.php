@@ -31,6 +31,7 @@
                             <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
+                    @error('selected_categories') <span class="error">{{ $message }}</span> @enderror
                     @if($addingCategory)
                         <p wire:click="newCategory">x Ajouter une catégorie</p>
                         <label>Ajouter un nouvelle catégorie</label>
@@ -47,6 +48,7 @@
                             <option value="{{ $characteristic->id }}">{{ $characteristic->name }}</option>
                         @endforeach
                     </select>
+                    @error('selected_characteristics') <span class="error">{{ $message }}</span> @enderror
                     @if($addingCharacteristic)
                         <p wire:click="newCharacteristic">x Ajouter une caractéristique</p>
                         <label>Ajouter un nouvelle caractéristique</label>

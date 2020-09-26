@@ -20,29 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="939d0850-2302-4edc-b464-4ae66d153572" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CharacteristicAdd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/characteristic-add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Characteristic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CategoryAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CategoryAdd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ListingCategories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingCategories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ListingCharacteristics.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingCharacteristics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ListingProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ListingProducts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ProductAdd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ProductAdd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_25_183401_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_25_183401_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/characteristic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/characteristic.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/listing-categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/listing-categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/listing-characteristics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/listing-characteristics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/listing-products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/listing-products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/product-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/product.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601058104731</updated>
       <workItem from="1601058105855" duration="10107000" />
-      <workItem from="1601109049519" duration="14196000" />
+      <workItem from="1601109049519" duration="15570000" />
     </task>
     <servers />
   </component>

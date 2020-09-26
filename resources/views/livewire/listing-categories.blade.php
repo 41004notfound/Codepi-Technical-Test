@@ -3,9 +3,12 @@
         <div class="card-header">
             <h4 class="card-title mb-1">Catégories</h4>
             @if(count($categories) > 0)
-                <span wire:click="$toggle('adding')" class="card-subtitle cursor-pointer text-muted font-italic">
-                    {!! $adding ? '<i class="fa fa-minus"></i>' : '<i class="fa fa-plus"></i>' !!} Ajouter
-                </span>
+                <!-- Non-object id key error protection -->
+                @if(!$adding)
+                    <span wire:click="$toggle('adding')" class="card-subtitle cursor-pointer text-muted font-italic">
+                        <i class="fa fa-plus"></i> Ajouter
+                    </span>
+                @endif
             @endif
         </div>
         <div class="card-body">
