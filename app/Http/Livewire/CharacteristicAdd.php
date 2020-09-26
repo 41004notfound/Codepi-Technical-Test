@@ -15,6 +15,12 @@ class CharacteristicAdd extends Component
         'name' => 'required|min:3|max:25',
     ];
 
+    // Custom messages for Validation
+    protected $messages = [
+        'name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'required' => 'Ce champ doit être complété.',
+    ];
+
     /**
      * Submit the add category form
      */

@@ -21,6 +21,13 @@ class Characteristic extends Component
         'characteristic.name' => 'required|min:3|max:25',
     ];
 
+    // Custom messages for Validation
+    protected $messages = [
+        'characteristic.name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'characteristic.name.required' => 'Ce champ doit être complété.',
+    ];
+
+
     public function mount() {
         $this->characteristic = CharacteristicModel::find($this->characteristicID);
         $this->edit = false;

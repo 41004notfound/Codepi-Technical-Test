@@ -24,6 +24,13 @@ class CategoryAdd extends Component
         'description' => 'max:255',
     ];
 
+    // Custom messages for Validation
+    protected $messages = [
+        'name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'name.required' => 'Ce champ doit être complété.',
+        'description.min' => 'Le nombre de caractères doit être compris entre 0 et 255.',
+    ];
+
     public function mount() {
         $this->parent_categories = Category::parents()->get();
         $this->is_parent = true;

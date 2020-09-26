@@ -26,7 +26,14 @@ class Category extends Component
     // Rules for validation
     protected $rules = [
         'category.name' => 'required|min:3|max:25',
-        'category.description' => 'max:255',
+        'category.description' => 'min:3|max:255',
+    ];
+
+    // Rules for validation
+    protected $messages = [
+        'category.name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'category.name.required' => 'Ce champ doit être complété.',
+        'category.description.min' => 'Le nombre de caractères doit être compris entre 0 et 255.',
     ];
 
     public function mount() {

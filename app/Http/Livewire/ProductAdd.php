@@ -42,6 +42,19 @@ class ProductAdd extends Component
         'selected_characteristics' => 'required|min:3',
     ];
 
+    // Custom messages for Validation
+    protected $messages = [
+        'name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'name.required' => 'Ce champ doit être complété.',
+        'description.min' => 'Le nombre de caractères doit être compris entre 0 et 255.',
+        'price_ttc.required' => 'Ce champ doit être complété.',
+        'price_ttc.min' => 'Le prix doit être au minimum de 0.',
+        'stock.required' => 'Ce champ doit être complété.',
+        'stock.min' => 'Le stock doit être au minimum de 0.',
+        'selected_categories.*'  => 'Vous devez selectionner au minimum 3 catégories.',
+        'selected_characteristics.*'  => 'Vous devez selectionner au minimum 3 caractéristiques.',
+    ];
+
     public function mount() {
         $this->categories = Category::all();
         $this->characteristics = Characteristic::all();

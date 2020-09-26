@@ -24,9 +24,4 @@ class ListingCategories extends Component
         $this->adding = false;
         $this->edit = false;
     }
-
-    /*public function refresh() {
-        // Notify the parent to refresh the category listing
-        $this->emit('update');
-    }*/
 }

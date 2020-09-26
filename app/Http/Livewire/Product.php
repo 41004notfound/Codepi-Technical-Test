@@ -34,6 +34,19 @@ class Product extends Component
         'selected_characteristics' => 'required|min:3',
     ];
 
+    // Custom messages for Validation
+    protected $messages = [
+        'product.name.min' => 'Le nombre de caractères doit être compris entre 3 et 25.',
+        'product.name.required' => 'Ce champ doit être complété.',
+        'product.description.min' => 'Le nombre de caractères doit être compris entre 0 et 255.',
+        'product.price_ttc.required' => 'Ce champ doit être complété.',
+        'product.price_ttc.min' => 'Le prix doit être au minimum de 0.',
+        'product.stock.required' => 'Ce champ doit être complété.',
+        'product.stock.min' => 'Le stock doit être au minimum de 0.',
+        'selected_categories.*'  => 'Vous devez selectionner au minimum 3 catégories.',
+        'selected_characteristics.*'  => 'Vous devez selectionner au minimum 3 caractéristiques.',
+    ];
+
     // Listeners for updates
     protected $listeners = ['update' => 'mount'];
 
