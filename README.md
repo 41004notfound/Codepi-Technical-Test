@@ -15,7 +15,7 @@ Installer composer
 composer install
 ```
 
-#Initialiser l'environnement.
+# Initialiser l'environnement.
 Renommer le fichier .env.example en .env et configurer votre environnement.
 ```
 DB_DATABASE={votre bdd}
@@ -23,12 +23,12 @@ DB_USERNAME={votre user}
 DB_PASSWORD={votre password}
 ```
 
-Regénérer la clé de l'application
+# Regénérer la clé de l'application
 ```
 php artisan key:generate
 ```
 
-Exécuter les migrations
+# Exécuter les migrations
 ```
 php artisan migrate
 ```
