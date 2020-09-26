@@ -25,8 +25,8 @@ class ProductAdd extends Component
     public $selected_characteristics;
 
     // True to show the adding input, false to hide it
-    public $addingCategory;
-    public $addingCharacteristic;
+    public $adding_category;
+    public $adding_characteristic;
 
     // The new category & characteristic to add
     public $new_category;
@@ -87,13 +87,13 @@ class ProductAdd extends Component
      * Show the create & add new category input
      */
     public function newCategory() {
-        $this->addingCategory = !$this->addingCategory;
+        $this->adding_category = !$this->adding_category;
     }
 
     /**
      * Show the create & add new characteristic input
      */
     public function newCharacteristic() {
-        $this->addingCharacteristic = !$this->addingCharacteristic;
+        $this->adding_characteristic = !$this->adding_characteristic;
     }
 }

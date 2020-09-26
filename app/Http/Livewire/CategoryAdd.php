@@ -27,6 +27,9 @@ class CategoryAdd extends Component
     public function mount() {
         $this->parent_categories = Category::parents()->get();
         $this->is_parent = true;
+        
+        // Default parent
+        $this->selected_parent_category = 1;
     }
 
     /**

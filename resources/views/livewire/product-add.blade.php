@@ -32,7 +32,7 @@
                         @endforeach
                     </select>
                     @error('selected_categories') <span class="error">{{ $message }}</span> @enderror
-                    @if($addingCategory)
+                    @if($adding_category)
                         <p wire:click="newCategory">x Ajouter une catégorie</p>
                         <label>Ajouter un nouvelle catégorie</label>
                         <input type="text" class="form-control" wire:model="new_category" placeholder="Nom de la catégorie">
@@ -49,7 +49,7 @@
                         @endforeach
                     </select>
                     @error('selected_characteristics') <span class="error">{{ $message }}</span> @enderror
-                    @if($addingCharacteristic)
+                    @if($adding_characteristic)
                         <p wire:click="newCharacteristic">x Ajouter une caractéristique</p>
                         <label>Ajouter un nouvelle caractéristique</label>
                         <input type="text" class="form-control" wire:model="new_characteristic"
