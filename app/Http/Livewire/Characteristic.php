@@ -7,8 +7,13 @@ use Livewire\Component;
 
 class Characteristic extends Component
 {
+    // Characteristic model
     public $characteristic;
+
+    // Characteristic ID provided by parent component
     public $characteristicID;
+
+    // True to show edit characteristic form, false to hide
     public $edit;
 
     // Rules for validation
@@ -30,6 +35,7 @@ class Characteristic extends Component
 
         // Refresh products
         $this->emitTo('product', 'update');
+
         // Refresh component
         $this->mount();
     }

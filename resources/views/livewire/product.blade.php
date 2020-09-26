@@ -12,6 +12,7 @@
                     <h4 class="card-title mb-1">{{ $product->name }}</h4>
                 @endif
             </div>
+
             <div class="col-6">
                 <i class="far fa-trash-alt text-danger cursor-pointer float-right m-1" wire:click="delete"></i>
                 <i class="far fa-edit cursor-pointer float-right m-1" wire:click="$toggle('edit')"></i>
@@ -37,6 +38,7 @@
                             <p>Prix : {{ $product->price_ttc }}€</p>
                         @endif
                     </div>
+                    
                     <div class="col-6">
                         @if($edit)
                             <label>Stock :</label>

@@ -10,17 +10,21 @@
         </div>
         <div class="card-body">
             <!-- Adding form -->
-            @if($adding)
-                @livewire('characteristic-add')
-            @else
-                @if(count($characteristics) > 0)
-                    @foreach($characteristics as $characteristic)
-                        @livewire('characteristic', ['characteristicID' => $characteristic->id], key($characteristic->id))
-                    @endforeach
-                @else
+                @if($adding)
+                    <!-- Add Characteristic - Livewire Component -->
                     @livewire('characteristic-add')
+                @else
+                    @if(count($characteristics) > 0)
+                        @foreach($characteristics as $characteristic)
+                            <!-- Characteristic - Livewire Component -->
+                            @livewire('characteristic', ['characteristicID' => $characteristic->id], key($characteristic->id))
+                        @endforeach
+                    @else
+                        <!-- Add Characteristic - Livewire Component -->
+                        @livewire('characteristic-add')
+                    @endif
                 @endif
-            @endif
+            <!-- END Adding form -->
         </div>
     </div>
 </div>

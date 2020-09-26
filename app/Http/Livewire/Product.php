@@ -9,15 +9,20 @@ use App\Product as ProductModel;
 
 class Product extends Component
 {
+    // Product model
     public $product;
+
+    // Product ID provided by parent component
     public $productID;
+
+    // True to show edit product form, false to hide
     public $edit;
-    public $selected_categories;
-    public $selected_characteristics;
 
     // Categories & characteristics select list
     public $categories;
     public $characteristics;
+    public $selected_categories;
+    public $selected_characteristics;
 
     // Rules for validation
     protected $rules = [
@@ -29,6 +34,7 @@ class Product extends Component
         'selected_characteristics' => 'required|min:3',
     ];
 
+    // Listeners for updates
     protected $listeners = ['update' => 'mount'];
 
     public function mount() {
@@ -36,11 +42,6 @@ class Product extends Component
         $this->categories = Category::all();
         $this->characteristics = Characteristic::all();
         $this->edit = false;
-    }
-
-    public function render()
-    {
-        return view('livewire.product');
     }
 
     /**
@@ -58,25 +59,16 @@ class Product extends Component
     }
 
     /**
-     * (Soft)Delete the product
-     */
-    public function delete() {
-        $delete = $this->product->delete();
-
-        // Notify the parent to refresh the product listing
-        $this->emitUp('delete');
-    }
-
-    /**
      * Edit the product
      */
-    public function save()
-    {
+    public function save() {
         $this->validate();
 
+        // Reset categories & characteristics
         $this->product->resetCategories();
         $this->product->resetCharacteristics();
 
+        // Attach selected categories & characteristics
         $this->product->addCategories($this->selected_categories);
         $this->product->addCharacteristics($this->selected_characteristics);
 
@@ -84,5 +76,15 @@ class Product extends Component
 
         // Refresh component
         $this->mount();
+    }
+
+    /**
+     * (Soft)Delete the product
+     */
+    public function delete() {
+        $delete = $this->product->delete();
+
+        // Notify the parent to refresh the product listing
+        $this->emitUp('delete');
     }
 }

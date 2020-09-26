@@ -8,4 +8,5 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
+// Dashboard
 Route::get('/', 'AppController@index');

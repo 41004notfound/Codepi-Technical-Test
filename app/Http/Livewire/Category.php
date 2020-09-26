@@ -7,14 +7,21 @@ use Livewire\Component;
 
 class Category extends Component
 {
+    // Category model
     public $category;
+
+    // Category ID provided by parent component
     public $categoryID;
+
+    // True to show edit category form, false to hide
     public $edit;
+
+    // True is this category is parent, false if not
     public $is_parent;
-    public $selected_parent_category;
 
     // Parent categories select list
     public $parent_categories;
+    public $selected_parent_category;
 
     // Rules for validation
     protected $rules = [
@@ -38,6 +45,7 @@ class Category extends Component
     public function save() {
         $this->validate();
 
+        // Define category parent
         if($this->is_parent)
             $this->category->parent = $this->category->id;
         else
@@ -47,8 +55,10 @@ class Category extends Component
 
         // Refresh products
         $this->emitTo('product', 'update');
+
         // Refresh parent component
         $this->emitUp('update');
+
         // Refresh component
         $this->mount();
     }

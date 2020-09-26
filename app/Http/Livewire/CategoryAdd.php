@@ -36,21 +36,23 @@ class CategoryAdd extends Component
      * Submit the add category form
      */
     public function submit() {
-
         $this->validate();
         $category = Category::create([
             'name' => $this->name,
             'description' => ($this->description ?? ''),
         ]);
 
+        // Define category parent
         if($this->is_parent)
             $category->parent = $category->id;
         else
             $category->parent = $this->selected_parent_category;
+
         $category->save();
 
         // Refresh products
         $this->emitTo('product', 'update');
+
         // Notify the parent to refresh the category listing
         $this->emitUp('insert');
     }

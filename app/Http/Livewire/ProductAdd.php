@@ -47,18 +47,6 @@ class ProductAdd extends Component
         $this->characteristics = Characteristic::all();
     }
 
-    public function render()
-    {
-        return view('livewire.product-add', [
-            'categories' => $this->categories,
-            'characteristics' => $this->characteristics,
-            'selected_categories' => $this->selected_categories,
-            'selected_characteristics' => $this->selected_characteristics,
-            'new_category' => $this->new_category,
-            'new_characteristic' => $this->new_characteristic
-        ]);
-    }
-
     /**
      * Submit the add product form
      */

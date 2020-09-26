@@ -7,6 +7,7 @@
                 @error('name') <span class="error">{{ $message }}</span> @enderror
             </div>
         </div>
+
         <button type="submit" class="btn btn-primary">Ajouter</button>
     </form>
 </div>

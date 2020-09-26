@@ -7,14 +7,17 @@ use Livewire\Component;
 
 class ListingCategories extends Component
 {
+    // Categories models
     public $categories;
 
     // True to show the adding form, false to hide it
     public $adding;
+
     // True to show the editing form, false to hide it
     public $edit;
 
-    protected $listeners = ['insert' => 'mount', 'update' => 'mount', 'adding' => 'refresh'];
+    // Listeners for updates
+    protected $listeners = ['insert' => 'mount', 'update' => 'mount'];
 
     public function mount() {
         $this->categories = Category::orderBy('id')->get()->groupBy('parent')->all();
@@ -22,7 +25,8 @@ class ListingCategories extends Component
         $this->edit = false;
     }
 
-    public function refresh() {
+    /*public function refresh() {
+        // Notify the parent to refresh the category listing
         $this->emit('update');
-    }
+    }*/
 }

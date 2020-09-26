@@ -7,23 +7,18 @@ use Livewire\Component;
 
 class ListingProducts extends Component
 {
+    // Products models
     public $products;
 
     // True to show the adding form, false to hide it
     public $adding;
 
+    // Listeners for updates
     protected $listeners = ['delete' => 'mount', 'update' => 'mount', 'insert' => 'mount'];
 
     public function mount() {
         $this->products = Product::orderBy('id', 'DESC')->get();
         $this->adding = false;
-    }
-
-    public function render()
-    {
-        return view('livewire.listing-products', [
-            'products' => $this->products
-        ]);
     }
 
     /**

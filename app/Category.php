@@ -18,6 +18,13 @@ class Category extends Model
     protected $fillable = ['name', 'description', 'parent'];
 
     /**
+     * Check if this category is parent
+     */
+    public function isParent() {
+        return ($this->id == $this->parent);
+    }
+
+    /**
      * Count products in the category
      */
     public function countProducts() {
@@ -27,13 +34,6 @@ class Category extends Model
             'category_id',
             'product_id'
         );
-    }
-
-    /**
-     * Check if this category is parent
-     */
-    public function isParent() {
-        return ($this->id == $this->parent);
     }
 
     /**
