@@ -3,8 +3,8 @@
 Test technique préalable à l'embauche réalisé par [Lucas Côté](https://lucascote.fr) pour l'entreprise [Codepi](https://codepi.com).
 
 ## Ressources utilisées
-- [Frameword Laravel](https://laravel.com/docs/),
-- [Frameword Livewire for Laravel](https://laravel-livewire.com/docs/),
+- [Framework Laravel](https://laravel.com/docs/),
+- [Framework Livewire for Laravel](https://laravel-livewire.com/docs/),
 - [Bootstrap](https://bootstrap.com),
 - [FontAwesome](https://fontawesome.com).
 
@@ -47,4 +47,4 @@ php artisan serve
 Vous pouvez accéder à votre application à l'adresse suivante : http://127.0.0.1:8000/
 
 ## Notes
-Le frameword Laravel Livewire n'étant assez pas connu pour le moment, j'ai pris la liberté de commenter les classes en quantité, dans le but de pouvoir vous faciliter la lecture du code des composants Livewire que j'ai écrit.
+Le framework Laravel Livewire n'étant assez pas connu pour le moment, j'ai pris la liberté de commenter les classes en quantité, dans le but de pouvoir vous faciliter la lecture du code des composants Livewire que j'ai écrit.
